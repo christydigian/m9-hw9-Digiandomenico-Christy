@@ -106,10 +106,6 @@ section.hero > button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 844px) {
-  
-}
-
 main article {
   padding: 48px 96px;
 }
@@ -127,12 +123,6 @@ main > article img {
   margin-bottom: 6px;
 }
 
-@media screen and (max-width: 844px) {
-  main > article img {
-    float: center;
-  }
-}
-
 footer {
   margin-top: auto;
   background-color: var(--gray);
@@ -142,8 +132,17 @@ footer {
   color: var(--off-white);
 }
 
-@media screen and (max-width: 844px) {
-  main > a {
-    
+@media screen and (max-width: 480px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav a{
+    width: 100%;
+    text-align: center;
+  }
+  main > article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
